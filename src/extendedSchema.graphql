@@ -1,3 +1,22 @@
-extend type Origin {
+
+type CharacterList {
+  results: [Character] 
+}
+
+type Character {
+  id: ID
   name: String
+  gender: String
+  image: String
+  origin: Origin
+}
+
+type Origin {
+  id: ID
+  name: String
+}
+
+
+extend type Query {
+  characters: CharacterList
 }

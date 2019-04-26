@@ -1,0 +1,4 @@
+
+query isOriginExist {
+  isOriginExist @client
+}

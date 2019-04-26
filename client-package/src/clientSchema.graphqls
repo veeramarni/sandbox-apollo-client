@@ -1,0 +1,9 @@
+
+
+extend type Origin {
+    isExist: Boolean
+}
+
+extend type Query {
+    isOriginExist: Boolean
+}

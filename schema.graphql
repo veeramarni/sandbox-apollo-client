@@ -1,19 +1,28 @@
+scalar AnyObject
+type FieldError {
+  field: String!
+  message: String!
+}
+
 type Query {
-  characters: CharacterList
+    dummy: Int
 }
 
-type CharacterList {
-  results: [Character] 
+type Mutation {
+    dummy: Int
 }
 
-type Character {
-  id: ID
-  name: String
-  gender: String
-  image: String
-  origin: Origin
+type Subscription {
+    dummy: Int
 }
 
-type Origin {
-  id: ID
+interface Node {
+      id: ID!
+}
+
+
+schema {
+    query: Query
+    mutation: Mutation
+    subscription: Subscription
 }
